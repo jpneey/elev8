@@ -1,0 +1,162 @@
+html, body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #000;
+}
+
+#hero {
+    min-height: 600px;
+    padding-top: 20rem;
+}
+
+.web {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.bg-black {
+    background: #000;
+}
+
+.bg {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.video {
+    padding-top: 50%;
+    border-radius: 8px;
+    margin-bottom: -80px;   
+}
+
+.border-12 {
+    border-radius: 8px;
+}
+
+.display-1 {
+    font-size: 4.2rem;
+    font-weight: 400;
+}
+
+.display-2 {
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.padding {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.logo {
+    max-height: 35px;
+    max-width: 100%;
+}
+
+.vetical-window {
+    width: 50%;
+    padding-top: 100%;
+}
+
+.btn-virgin,
+.bg-virgin {
+    background: #C9D6FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E2E2E2, #dbe2f7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E2E2E2, #dbe2f7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.bg-virgin-reverse {
+    background: #C9D6FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #E2E2E2, #dbe2f7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #E2E2E2, #dbe2f7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.btn {
+    padding: 12px 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#footer .bg-virgin {
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+
+.video-zoomable {
+    transition: transform 2s; /* Smooth transition */
+}
+
+.icon-display {
+    font-size: 2.5rem;
+}
+
+
+.text-primary {
+    color: #000 !important;
+}
+
+.play-icon {
+    width: 80px;
+    height: 80px;
+}
+.service-toggle.on {
+    pointer-events: none;
+}
+.service-toggle:not(.on) {
+    opacity: 0.5;
+}
+
+.service-content:not(.on) {
+    display: none;
+}
+
+.navbar {
+    z-index: 200;
+}
+
+@media screen and ( max-width: 767px ) {
+
+    #hero {
+        padding-top: 15rem;
+    }
+
+    .cta-bg {
+        position: relative !important;
+        padding-top: 56%;
+        top: auto !important;
+        right: auto !important;
+        margin-bottom: 30px;
+        margin-top: -30px;
+    }
+
+    .container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .video {
+        margin-bottom: -30px;
+    }
+    .padding {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .logo {
+        max-width: 100px;
+    }
+
+    .vetical-window {
+        width: 100%;
+        padding-top: 56%;
+    }
+}
