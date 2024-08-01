@@ -74,4 +74,10 @@ $( document ).ready( function() {
 
 		elementEntranceFade()
     });
+
+	$('.ripple-video-zoomable').ripples({
+		resolution: 512,
+		dropRadius: 20,
+		perturbance: 0.20,
+	})
 })
