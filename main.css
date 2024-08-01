@@ -228,8 +228,9 @@ html, body {
 }
 
 .step {
-    margin-top: auto;
     font-size: .7rem;
+    display: flex;
+    flex-wrap: wrap;
 }
 .step i {
     width: 40px;
@@ -241,4 +242,15 @@ html, body {
     width: 100%;
     font-size: 1.3rem;
     font-weight: normal;
+}
+
+.service-icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-size: 28px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid #ccc;
+    border-radius: 50%;
 }
