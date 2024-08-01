@@ -41,10 +41,20 @@ $( document ).ready( function() {
 			}
 		})
 
-		$.each( $( '.to-fade-up' ), function() {
-			$this = $( this );
+		$.each( $( '.to-fade' ), function() {
+			var $this = $( this );
+
 			if ( $this.isInViewport() ) {
-				$this.removeClass( 'to-fade-up' )
+				
+				var delay = $this.attr( 'data-delay' ) || 0
+
+				$this.removeClass( 'to-fade' )
+				$this.addClass( 'fade-up' )
+
+				console.log( delay )
+				if ( delay ) {
+					$this.css({ 'transition-delay' : delay + 'ms' })
+				}
 				$this.addClass( 'fade-up' )
 			}
 		})
@@ -61,5 +71,7 @@ $( document ).ready( function() {
         $.each( $( '.video-zoomable' ), function() {
             $( this ).css('transform', 'scale(' + zoomFactor + ')');
         })
+
+		elementEntranceFade()
     });
 })
