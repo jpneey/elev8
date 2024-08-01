@@ -76,8 +76,8 @@ $( document ).ready( function() {
     });
 
 	$('.ripple-video-zoomable').ripples({
-		resolution: 512,
+		resolution: 100,
 		dropRadius: 20,
-		perturbance: 0.20,
+		perturbance: 0.1,
 	})
 })
