@@ -51,7 +51,6 @@ $( document ).ready( function() {
 				$this.removeClass( 'to-fade' )
 				$this.addClass( 'fade-up' )
 
-				console.log( delay )
 				if ( delay ) {
 					$this.css({ 'transition-delay' : delay + 'ms' })
 				}
@@ -67,7 +66,7 @@ $( document ).ready( function() {
     $(window).on('scroll', function() {
         // zoom scroll
         var scrollTop = $(this).scrollTop();
-        var zoomFactor = 1 + (scrollTop / 10000); // Adjust the divisor to control zoom speed
+        var zoomFactor = 1 + (scrollTop / 8000); // Adjust the divisor to control zoom speed
         $.each( $( '.video-zoomable' ), function() {
             $( this ).css('transform', 'scale(' + zoomFactor + ')');
         })
@@ -80,4 +79,21 @@ $( document ).ready( function() {
 		dropRadius: 20,
 		perturbance: 0.1,
 	})
+
+	var swiper = new Swiper(".how-we-work.swiper", {
+		slidesPerView: 2,
+		spaceBetween: 30,
+		grabCursor: true,
+		pagination: {
+			el: ".progress",
+			type: "progressbar",
+		},
+		
+        breakpoints: {
+			768: {
+				slidesPerView: 3,
+				spaceBetween: 40,
+			},
+		}
+	});
 })
