@@ -81,7 +81,7 @@ $( document ).ready( function() {
 	})
 
 	var swiper = new Swiper(".how-we-work.swiper", {
-		slidesPerView: 2,
+		slidesPerView: 'auto',
 		spaceBetween: 30,
 		grabCursor: true,
 		pagination: {
