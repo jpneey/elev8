@@ -10,13 +10,17 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0" />
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
         <link href="./main.css" rel="stylesheet">
     </head> 
     <body>
 
         <section id="hero" class="position-relative bg-black">
             <figure class="web fade to-fade" data-delay="100">
-                <img class="position-absolute top-100 start-50 translate-middle" src="./web.svg" alt="Image">
+                <img class="position-absolute top-100 start-50 translate-middle" src="./assets/web.svg" alt="Image">
             </figure>
 
             <nav class="navbar navbar-expand-lg navbar-dark position-absolute top-0 start-0 w-100 py-md-5 py-4 px-md-5">
@@ -47,7 +51,7 @@
                         <h1 class="display-1 text-white fade to-fade" data-delay="300">Speed up workflow and boost your sales.</h1>
                         <div class="row pt-5 justify-content-center fade to-fade" data-delay="500">
                             <div class="col-auto mx-1">
-                                <a href="" class="mx-1 btn btn-primary rounded-pill d-inline-flex align-items-center">Get Started
+                                <a href="" class="mx-1 btn btn-primary rounded-pill d-inline-flex align-items-center pulse">Get Started
                                     <span class="material-symbols-outlined ms-1">
                                         arrow_outward
                                     </span>
@@ -58,7 +62,7 @@
                     </div>
                     <div class="col col-12 col-xl-10 mx-auto mt-5">
                         <div class="video overflow-hidden position-relative fade to-fade" data-delay="700">
-                            <div class="bg video-zoomable position-absolute top-0 start-0 w-100 h-100" style="background-image: url(./matt-hardy-6ArTTluciuA-unsplash.jpg);"></div>
+                            <div class="bg video-zoomable position-absolute top-0 start-0 w-100 h-100" style="background-image: url(./assets/matt-hardy-6ArTTluciuA-unsplash.jpg);"></div>
                             <div class="position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center rounded-circle text-white bg-black play-icon">
                                 <span class="material-symbols-outlined icon-display">
                                     play_arrow
@@ -70,7 +74,7 @@
             </div>
         </section>
 
-        <section id="usp" class="position-relative padding">
+        <section id="usp" class="position-relative bg-virgin padding">
             <div class="container padding pb-0 position-relative overflow-hidden">
                 <div class="row g-5 py-4 py-md-0">
                     <div class="col-md-6 col-lg-4 text-center fade to-fade" data-delay="300">
@@ -113,7 +117,7 @@
         <section id="cta" class="position-relative bg-black">
             <div class="d-block w-100 padding position-relative overflow-hidden">
                 <div class="col-md-6 h-100 position-absolute top-0 end-0 bg overflow-hidden cta-bg">
-                    <div class="video-zoomable bg position-absolute w-100 h-100 top-0 start-0" style="background-image: url(./tijana-mihajlovic-4qO-IMqM52U-unsplash.jpg);"></div>
+                    <div class="video-zoomable bg position-absolute w-100 h-100 top-0 start-0" style="background-image: url(./assets/tijana-mihajlovic-4qO-IMqM52U-unsplash.jpg);"></div>
                 </div>
 
                 <div class="container position-relative">
@@ -134,18 +138,18 @@
         <section id="logos" class="position-relative py-5">
             <div class="container">
                 <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 justify-content-center align-items-center">
-                    <div class="col text-center"><div class="px-md-5 fade to-fade" data-delay="300"><img src="./logo-1.svg" alt="logo" class="logo m-3"></div></div>
-                    <div class="col text-center"><div class="px-md-5 fade to-fade" data-delay="400"><img src="./logo-2.svg" alt="logo" class="logo m-3"></div></div>
-                    <div class="col text-center"><div class="px-md-5 fade to-fade" data-delay="500"><img src="./logo-3.svg" alt="logo" class="logo m-3"></div></div>
-                    <div class="col text-center"><div class="px-md-5 fade to-fade" data-delay="600"><img src="./logo-4.svg" alt="logo" class="logo m-3"></div></div>
-                    <div class="col text-center"><div class="px-md-5 fade to-fade" data-delay="700"><img src="./logo-5.svg" alt="logo" class="logo m-3"></div></div>
+                    <div class="col text-center"><div class="px-md-5 fade to-fade" data-delay="300"><img src="./assets/logo-1.svg" alt="logo" class="logo m-3"></div></div>
+                    <div class="col text-center"><div class="px-md-5 fade to-fade" data-delay="400"><img src="./assets/logo-2.svg" alt="logo" class="logo m-3"></div></div>
+                    <div class="col text-center"><div class="px-md-5 fade to-fade" data-delay="500"><img src="./assets/logo-3.svg" alt="logo" class="logo m-3"></div></div>
+                    <div class="col text-center"><div class="px-md-5 fade to-fade" data-delay="600"><img src="./assets/logo-4.svg" alt="logo" class="logo m-3"></div></div>
+                    <div class="col text-center"><div class="px-md-5 fade to-fade" data-delay="700"><img src="./assets/logo-5.svg" alt="logo" class="logo m-3"></div></div>
                 </div>
             </div>
         </section>
 
         <section id="services" class="position-relative padding bg-virgin-reverse">
             <figure class="web opacity-50">
-                <img class="position-absolute top-100 start-50 translate-middle" src="./web-ddd.svg" alt="Image">
+                <img class="position-absolute top-100 start-50 translate-middle" src="./assets/web-ddd.svg" alt="Image">
             </figure>
             <div class="container pt-md-5 pt-3 mt-3 position-relative">
                 <div class="row">
@@ -155,52 +159,44 @@
                     <div class="col col-12 padding pb-0"><!--  --></div>
                     <div class="col col-12 col-xl-4 mb-5 mb-xl-0 fade to-fade" data-delay="500">
                         <a href="#web-development" data-class="on" data-target=".service-1, .service-1-content, .on.service-content, .on.service-toggle" class="on class-toggler service-toggle service-1 text-decoration-none d-block h4 mb-4">Website Development</a>
-                        <a href="#web-development" data-class="on" data-target=".service-2, .service-2-content, .on.service-content, .on.service-toggle" class="class-toggler service-toggle service-2 text-decoration-none d-block h4 mb-4">Search Engine Optimisation</a>
+                        <a href="#web-development" data-class="on" data-target=".service-2, .service-2-content, .on.service-content, .on.service-toggle" class="class-toggler service-toggle service-2 text-decoration-none d-block h4 mb-4">Digital Marketing</a>
                         <a href="#web-development" data-class="on" data-target=".service-3, .service-3-content, .on.service-content, .on.service-toggle" class="class-toggler service-toggle service-3 text-decoration-none d-block h4 mb-4">Website Design</a>
-                        <a href="#web-development" data-class="on" data-target=".service-4, .service-4-content, .on.service-content, .on.service-toggle" class="class-toggler service-toggle service-4 text-decoration-none d-block h4">Digital Marketing</a>
+                        <a href="#web-development" data-class="on" data-target=".service-4, .service-4-content, .on.service-content, .on.service-toggle" class="class-toggler service-toggle service-4 text-decoration-none d-block h4">Application Development</a>
                     </div>
                     <div class="col col-12 col-xl-8 fade to-fade" data-delay="700">
                         <div class="service-content service-1-content on row-cols-xl-2 row-cols-1 row">
-                            <div class="col mb-3">
-                                <div class="pe-xl-2 pb-2">
-                                    <div class="d-block w-100 bg-white p-4">
-                                        <span class="icon-display text-body opacity-25 material-symbols-outlined">
-                                            language
-                                        </span>
-                                        <h4 class="padding pb-0">Lorem ipsum</h4>
-                                        <p class="opacity-75 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <div class="col mb-3 h-auto">
+                                <div class="pe-xl-2 pb-2 h-100">
+                                    <div class="d-block w-100 bg-white p-4 h-100">
+                                        <div class="service-icon" style="background-image: url(./assets/service/wordpress.svg);"></div>
+                                        <h4 class="padding pb-0">Wordpress</h4>
+                                        <p class="opacity-75 mb-0">Elev8 your business with our wordpress built websites from scratch.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col mb-3">
-                                <div class="pe-xl-2 pb-2">
-                                    <div class="d-block w-100 bg-white p-4">
-                                        <span class="icon-display text-body opacity-25 material-symbols-outlined">
-                                            hub
-                                        </span>
-                                        <h4 class="padding pb-0">Lorem ipsum</h4>
-                                        <p class="opacity-75 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <div class="col mb-3 h-auto">
+                                <div class="pe-xl-2 pb-2 h-100">
+                                    <div class="d-block w-100 bg-white p-4 h-100">
+                                        <div class="service-icon" style="background-image: url(./assets/service/shopify.svg);"></div>
+                                        <h4 class="padding pb-0">Shopify</h4>
+                                        <p class="opacity-75 mb-0">Sell things online on shopify with our lightweight and modern themes bespoke to you.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col mb-3">
-                                <div class="pe-xl-2 pb-2">
-                                    <div class="d-block w-100 bg-white p-4">
-                                        <span class="icon-display text-body opacity-25 material-symbols-outlined">
-                                            all_inbox
-                                        </span>
-                                        <h4 class="padding pb-0">Lorem ipsum</h4>
-                                        <p class="opacity-75 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <div class="col mb-3 h-auto">
+                                <div class="pe-xl-2 pb-2 h-100">
+                                    <div class="d-block w-100 bg-white p-4 h-100">
+                                        <div class="service-icon" style="background-image: url(./assets/service/woo.svg);"></div>
+                                        <h4 class="padding pb-0">Woocommerce</h4>
+                                        <p class="opacity-75 mb-0">Power your store with the most popular ecommerce platform.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col mb-3">
-                                <div class="pe-xl-2 pb-2">
-                                    <div class="d-block w-100 bg-white p-4">
-                                        <span class="icon-display text-body opacity-25 material-symbols-outlined">
-                                            stacked_email
-                                        </span>
-                                        <h4 class="padding pb-0">Lorem ipsum</h4>
+                            <div class="col mb-3 h-auto">
+                                <div class="pe-xl-2 pb-2 h-100">
+                                    <div class="d-block w-100 bg-white p-4 h-100">
+                                        <div class="service-icon" style="background-image: url(./assets/service/php.svg);"></div>
+                                        <h4 class="padding pb-0">PHP Experts</h4>
                                         <p class="opacity-75 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                     </div>
                                 </div>
@@ -208,35 +204,40 @@
                         </div>
                         
                         <div class="service-content service-2-content row-cols-xl-2 row-cols-1 row">
-                            <div class="col mb-3">
-                                <div class="pe-xl-2 pb-2">
-                                    <div class="d-block w-100 bg-white p-4">
-                                        <span class="icon-display text-body opacity-25 material-symbols-outlined">
-                                            language
-                                        </span>
-                                        <h4 class="padding pb-0">Lorem ipsum</h4>
+                            <div class="col mb-3 h-auto">
+                                <div class="pe-xl-2 pb-2 h-100">
+                                    <div class="d-block w-100 bg-white p-4 h-100">
+                                        <div class="service-icon" style="background-image: url(./assets/service/ga.svg);"></div>
+                                        <h4 class="padding pb-0">Google Analytics</h4>
                                         <p class="opacity-75 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col mb-3">
-                                <div class="pe-xl-2 pb-2">
-                                    <div class="d-block w-100 bg-white p-4">
-                                        <span class="icon-display text-body opacity-25 material-symbols-outlined">
-                                            hub
-                                        </span>
-                                        <h4 class="padding pb-0">Lorem ipsum</h4>
+                            <div class="col mb-3 h-auto">
+                                <div class="pe-xl-2 pb-2 h-100">
+                                    <div class="d-block w-100 bg-white p-4 h-100">
+                                        <div class="service-icon" style="background-image: url(./assets/service/gtm.svg);"></div>
+                                        <h4 class="padding pb-0">Google Tag Manager</h4>
                                         <p class="opacity-75 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col mb-3">
-                                <div class="pe-xl-2 pb-2">
-                                    <div class="d-block w-100 bg-white p-4">
-                                        <span class="icon-display text-body opacity-25 material-symbols-outlined">
-                                            stacked_email
-                                        </span>
-                                        <h4 class="padding pb-0">Lorem ipsum</h4>
+                            <div class="col mb-3 h-auto">
+                                <div class="pe-xl-2 pb-2 h-100">
+                                    <div class="d-block w-100 bg-white p-4 h-100">
+                                        <div class="service-icon" style="background-image: url(./assets/service/ads.svg);"></div>
+
+                                        <h4 class="padding pb-0">Google Ads</h4>
+                                        <p class="opacity-75 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mb-3 h-auto">
+                                <div class="pe-xl-2 pb-2 h-100">
+                                    <div class="d-block w-100 bg-white p-4 h-100">
+                                        <div class="service-icon" style="background-image: url(./assets/service/google.svg);"></div>
+
+                                        <h4 class="padding pb-0">Search Engine Optimisation</h4>
                                         <p class="opacity-75 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                     </div>
                                 </div>
@@ -244,35 +245,21 @@
                         </div>
 
                         <div class="service-content service-3-content row-cols-xl-2 row-cols-1 row">
-                            <div class="col mb-3">
-                                <div class="pe-xl-2 pb-2">
-                                    <div class="d-block w-100 bg-white p-4">
-                                        <span class="icon-display text-body opacity-25 material-symbols-outlined">
-                                            hub
-                                        </span>
-                                        <h4 class="padding pb-0">Lorem ipsum</h4>
+                            <div class="col mb-3 h-auto">
+                                <div class="pe-xl-2 pb-2 h-100">
+                                    <div class="d-block w-100 bg-white p-4 h-100">
+                                        <div class="service-icon" style="background-image: url(./assets/service/xd.svg);"></div>
+
+                                        <h4 class="padding pb-0">Adobe XD</h4>
                                         <p class="opacity-75 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col mb-3">
-                                <div class="pe-xl-2 pb-2">
-                                    <div class="d-block w-100 bg-white p-4">
-                                        <span class="icon-display text-body opacity-25 material-symbols-outlined">
-                                            all_inbox
-                                        </span>
-                                        <h4 class="padding pb-0">Lorem ipsum</h4>
-                                        <p class="opacity-75 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col mb-3">
-                                <div class="pe-xl-2 pb-2">
-                                    <div class="d-block w-100 bg-white p-4">
-                                        <span class="icon-display text-body opacity-25 material-symbols-outlined">
-                                            stacked_email
-                                        </span>
-                                        <h4 class="padding pb-0">Lorem ipsum</h4>
+                            <div class="col mb-3 h-auto">
+                                <div class="pe-xl-2 pb-2 h-100">
+                                    <div class="d-block w-100 bg-white p-4 h-100">
+                                        <div class="service-icon" style="background-image: url(./assets/service/figma.svg);"></div>
+                                        <h4 class="padding pb-0">Figma</h4>
                                         <p class="opacity-75 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                     </div>
                                 </div>
@@ -280,34 +267,29 @@
                         </div>
 
                         <div class="service-content service-4-content row-cols-xl-2 row-cols-1 row">
-                            <div class="col mb-3">
-                                <div class="pe-xl-2 pb-2">
-                                    <div class="d-block w-100 bg-white p-4">
-                                        <span class="icon-display text-body opacity-25 material-symbols-outlined">
-                                            hub
-                                        </span>
+                            <div class="col mb-3 h-auto">
+                                <div class="pe-xl-2 pb-2 h-100">
+                                    <div class="d-block w-100 bg-white p-4 h-100">
+                                        <div class="service-icon" style="background-image: url(./assets/service/apple.svg);"></div>
+
                                         <h4 class="padding pb-0">Lorem ipsum</h4>
                                         <p class="opacity-75 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col mb-3">
-                                <div class="pe-xl-2 pb-2">
-                                    <div class="d-block w-100 bg-white p-4">
-                                        <span class="icon-display text-body opacity-25 material-symbols-outlined">
-                                            stacked_email
-                                        </span>
+                            <div class="col mb-3 h-auto">
+                                <div class="pe-xl-2 pb-2 h-100">
+                                    <div class="d-block w-100 bg-white p-4 h-100">
+                                        <div class="service-icon" style="background-image: url(./assets/service/android.svg);"></div>
                                         <h4 class="padding pb-0">Lorem ipsum</h4>
                                         <p class="opacity-75 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col mb-3">
-                                <div class="pe-xl-2 pb-2">
-                                    <div class="d-block w-100 bg-white p-4">
-                                        <span class="icon-display text-body opacity-25 material-symbols-outlined">
-                                            stacked_email
-                                        </span>
+                            <div class="col mb-3 h-auto">
+                                <div class="pe-xl-2 pb-2 h-100">
+                                    <div class="d-block w-100 bg-white p-4 h-100">
+                                        <div class="service-icon" style="background-image: url(./assets/service/windows.svg);"></div>
                                         <h4 class="padding pb-0">Lorem ipsum</h4>
                                         <p class="opacity-75 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                     </div>
@@ -327,8 +309,8 @@
                             <div class="col col-12 col-md-6 mb-5 mb-md-0">
                                 <div class="px-md-5">
                                     <div class="d-md-flex position-relative fade to-fade" data-delay="300">
-                                        <div class="ripple-video-zoomable bg vetical-window mb-4 mb-md-0 me-md-3" data-delay="300" style="background-image: url(./ivan-bandura-5cwigXmGWTo-unsplash.jpg);"></div>
-                                        <div class="ripple-video-zoomable position-relative bg vetical-window ms-md-3" data-delay="500" style="background-image: url(./ivan-bandura-2FEE6BR343k-unsplash.jpg);">
+                                        <div class="ripple-video-zoomable d-none d-md-block bg vetical-window mb-4 mb-md-0 me-md-3" data-delay="300" style="background-image: url(./assets/ivan-bandura-5cwigXmGWTo-unsplash.jpg);"></div>
+                                        <div class="ripple-video-zoomable position-relative bg vetical-window ms-md-3" data-delay="500" style="background-image: url(./assets/ivan-bandura-2FEE6BR343k-unsplash.jpg);">
 
                                             <div data-delay="800" class="fade to-fade position-absolute rounded-circle bg-primary text-white interactive-circle d-flex align-items-center justify-content-center">
                                                 <span class="material-symbols-outlined">
@@ -352,44 +334,71 @@
             </div>
         </section>
 
-        <section id="pricing" class="position-relative padding bg-white">
-            <div class="container pt-5 pt-md-0">
+        <section id="how-we-work" class="padding bg-white position-relative overflow-hidden">
+            <div class="container py-5">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col col-12 col-xl-4 mb-5 mb-xl-0">
+                        <h2 class="display-2 mb-4">How we work<br>with you.</h2>
+                        <p class="opacity-75 mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse maxime placeat eligendi tenetur? Assumenda dicta error ut mollitia blanditiis rem asperiores rerum, aspernatur natus eaque consequatur, cupiditate soluta ducimus omnis.</p>
+                    </div>
+                    <div class="col col-12 col-xl-7">
+                        <div class="swiper how-we-work position-relative">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide border borer-secondary border-12"><div class="step p-4"><i class="d-flex text-white bg-primary mb-3 rounded-circle justify-content-center align-items-center">1</i><span class="d-block mt-auto"><b class="mb-2">Initial Project Intake</b><span class="opacity-75">Assumenda dicta error ut mollitia blanditiis rem asperiores rerum.</span></span></div></div>
+                                <div class="swiper-slide border borer-secondary border-12"><div class="step p-4"><i class="d-flex text-white bg-primary mb-3 rounded-circle justify-content-center align-items-center">2</i><span class="d-block mt-auto"><b class="mb-2">Design and Mockup</b><span class="opacity-75">Assumenda dicta error ut mollitia blanditiis rem asperiores rerum.</span></span></div></div>
+                                <div class="swiper-slide border borer-secondary border-12"><div class="step p-4"><i class="d-flex text-white bg-primary mb-3 rounded-circle justify-content-center align-items-center">3</i><span class="d-block mt-auto"><b class="mb-2">Website Development</b><span class="opacity-75">Assumenda dicta error ut mollitia blanditiis rem asperiores rerum.</span></span></div></div>
+                                <div class="swiper-slide border borer-secondary border-12"><div class="step p-4"><i class="d-flex text-white bg-primary mb-3 rounded-circle justify-content-center align-items-center">4</i><span class="d-block mt-auto"><b class="mb-2">1<sup>st</sup> Round of Revision</b><span class="opacity-75">Assumenda dicta error ut mollitia blanditiis rem asperiores rerum.</span></span></div></div>
+                                <div class="swiper-slide border borer-secondary border-12"><div class="step p-4"><i class="d-flex text-white bg-primary mb-3 rounded-circle justify-content-center align-items-center">5</i><span class="d-block mt-auto"><b class="mb-2">Website Responsiveness</b><span class="opacity-75">Assumenda dicta error ut mollitia blanditiis rem asperiores rerum.</span></span></div></div>
+                                <div class="swiper-slide border borer-secondary border-12"><div class="step p-4"><i class="d-flex text-white bg-primary mb-3 rounded-circle justify-content-center align-items-center">6</i><span class="d-block mt-auto"><b class="mb-2">2<sup>nd</sup> Round of Revision</b><span class="opacity-75">Assumenda dicta error ut mollitia blanditiis rem asperiores rerum.</span></span></div></div>
+                                <div class="swiper-slide border borer-secondary border-12"><div class="step p-4"><i class="d-flex text-white bg-primary mb-3 rounded-circle justify-content-center align-items-center">7</i><span class="d-block mt-auto"><b class="mb-2">SEO Preparation</b><span class="opacity-75">Assumenda dicta error ut mollitia blanditiis rem asperiores rerum.</span></span></div></div>
+                                <div class="swiper-slide border borer-secondary border-12"><div class="step p-4"><i class="d-flex text-white bg-primary mb-3 rounded-circle justify-content-center align-items-center">8</i><span class="d-block mt-auto"><b class="mb-2">Website Launch</b><span class="opacity-75">Assumenda dicta error ut mollitia blanditiis rem asperiores rerum.</span></span></div></div>
+                                <div class="swiper-slide border borer-secondary border-12"><div class="step p-4"><i class="d-flex text-white bg-primary mb-3 rounded-circle justify-content-center align-items-center">9</i><span class="d-block mt-auto"><b class="mb-2">Maintenance</b><span class="opacity-75">Assumenda dicta error ut mollitia blanditiis rem asperiores rerum.</span></span></div></div>
+                                <div class="swiper-slide border borer-secondary border-12"><div class="step p-4"><i class="d-flex text-white bg-primary mb-3 rounded-circle justify-content-center align-items-center">~</i><span class="d-block mt-auto"><b class="mb-2">Happy client</b><span class="opacity-75">Assumenda dicta error ut mollitia blanditiis rem asperiores rerum.</span></span></div></div>
+                            </div>
+                            <div class="progress position-relative mt-4"></div>
+                        </div>
+                                                
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="position-relative padding bg-black">
+            <div class="container py-5">
                 <div class="row justify-content-center">
                     <div class="col col-12 col-xl-7 text-center">
-                        <h3 class="display-2">Elev8. your business</h3>
-                        <p class="opacity-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint saepe, quae esse accusantium unde, quidem eius officia incidunt, deserunt veritatis molestias et voluptates?</p>
+                        <h3 class="display-2 text-white">Elev8. your business</h3>
+                        <p class="opacity-75 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint saepe, quae esse accusantium unde, quidem eius officia incidunt, deserunt veritatis molestias et voluptates?</p>
                     </div>
                 </div>
 
                 <div class="row mt-5">
                     <div class="col col-12 col-md-4 mb-md-0 mb-4">
-                        <div class="pricing border p-5 border-12">
+                        <div class="pricing text-white border border-dark p-5 border-12">
                             <p class="display-3 mb-5">$99</p>
                             <p class="opacity-75 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <p class="border-light border-bottom pb-2 mb-2">6 Premium accounts</p>
-                            <p class="border-light border-bottom pb-2 mb-2">Ad-free usic listening</p>
+                            <p class="border-dark border-bottom pb-2 mb-2">6 Premium accounts</p>
+                            <p class="border-dark border-bottom pb-2 mb-2">Ad-free usic listening</p>
                             <p class="mb-4">Listen to music ad-free</p>
-                            <a href="" class="btn btn-outline-secondary btn-block d-block rounded-pill">Get started</a>
+
                         </div>
                     </div>
                     <div class="col col-12 col-md-4 mb-md-0 mb-4">
                         <div class="pricing bg-virgin p-5 border-12">
-                            <p class="display-3 mb-5">$99</p>
+                            <p class="display-1 mb-5">$99</p>
                             <p class="opacity-75 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                             <p class="border-light border-bottom pb-2 mb-2">6 Premium accounts</p>
                             <p class="border-light border-bottom pb-2 mb-2">Ad-free usic listening</p>
                             <p class="mb-4">Listen to music ad-free</p>
-                            <a href="" class="btn btn-primary btn-block d-block rounded-pill">Get started</a>
                         </div>
                     </div>
                     <div class="col col-12 col-md-4 mb-4 mb-md-0">
-                        <div class="pricing border p-5 border-12">
+                        <div class="pricing text-white border border-dark p-5 border-12">
                             <p class="display-3 mb-5">$99</p>
                             <p class="opacity-75 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <p class="border-light border-bottom pb-2 mb-2">6 Premium accounts</p>
-                            <p class="border-light border-bottom pb-2 mb-2">Ad-free usic listening</p>
+                            <p class="border-dark border-bottom pb-2 mb-2">6 Premium accounts</p>
+                            <p class="border-dark border-bottom pb-2 mb-2">Ad-free usic listening</p>
                             <p class="mb-4">Listen to music ad-free</p>
-                            <a href="" class="btn btn-outline-secondary btn-block d-block rounded-pill">Get started</a>
                         </div>
                     </div>
                 </div>
@@ -399,7 +408,7 @@
         <section id="footer" class="position-relative bg-black">
             <div class="bg-virgin position-relative padding">
                 <figure class="web">
-                    <img class="position-absolute top-100 start-50 translate-middle" src="./web.svg" alt="Image">
+                    <img class="position-absolute top-100 start-50 translate-middle" src="./assets/web.svg" alt="Image">
                 </figure>
                 <div class="container position-relative py-5">
                     <div class="row justify-content-center">
@@ -407,7 +416,7 @@
                             <h1 class="display-2 fade to-fade" data-delay="300">Let's make something big. Together.</h1>
                             <div class="row pt-5 justify-content-center g-1">
                                 <div class="col-auto fade to-fade" data-delay="500">
-                                    <a href="" class="btn btn-primary rounded-pill">Get Started</a>
+                                    <a href="#contact-us"  data-bs-toggle="modal" data-bs-target="#contact-us" class="btn btn-primary rounded-pill">Get Started</a>
                                 </div>
                             </div>
                         </div>

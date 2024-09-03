@@ -9,6 +9,7 @@ html, body {
 #hero {
     min-height: 600px;
     padding-top: 20rem;
+    z-index: 2;
 }
 
 .web {
@@ -74,6 +75,7 @@ html, body {
     padding-top: 100%;
 }
 
+.swiper-slide-active,
 .btn-virgin,
 .bg-virgin {
     background: #C9D6FF;  /* fallback for old browsers */
@@ -99,7 +101,7 @@ html, body {
 }
 
 .video-zoomable {
-    transition: transform 2s; /* Smooth transition */
+    transition: transform 1s; /* Smooth transition */
 }
 
 .icon-display {
@@ -126,12 +128,23 @@ html, body {
     display: none;
 }
 
+.service-content .col {
+    opacity: 0;
+    transform: translateY(12px);
+    transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    transition-delay: 2s;
+}
+.service-content.on .col {
+    opacity: 1;
+    transform: translateY( 0 );
+}
+
 .navbar {
     z-index: 200;
 }
 
 
-.fade {
+.fade:not(.modal) {
     opacity: 0;
     transform: translateY(12px);
     transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
@@ -141,6 +154,67 @@ html, body {
     opacity: 1;
     transform: translateY(0);
 }
+
+
+.interactive-circle {
+    width: 40px;
+    height: 40px;
+    left: -20px;
+    top: 50%;
+    animation: pulse-animation 2s infinite;
+}
+
+.swiper-slide-active .step i,
+.pulse {
+    animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+    0% {
+      box-shadow: 0 0 0 0px rgba(13,110,253, 0.5);
+    }
+    100% {
+      box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+    }
+}
+
+.swiper-slide {
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    min-height: 320px;
+}
+
+.step {
+    font-size: .7rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.step i {
+    width: 40px;
+    height: 40px;
+    font-style: normal;
+}
+.step b {
+    display: block;
+    width: 100%;
+    font-size: 1.3rem;
+    font-weight: normal;
+}
+
+.service-icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-size: 28px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+
 
 @media screen and ( max-width: 767px ) {
 
@@ -192,21 +266,12 @@ html, body {
         font-weight: 400;
     }
 
-}
-
-.interactive-circle {
-    width: 40px;
-    height: 40px;
-    left: -20px;
-    top: 50%;
-    animation: pulse-animation 2s infinite;
-}
-
-@keyframes pulse-animation {
-    0% {
-      box-shadow: 0 0 0 0px rgba(13,110,253, 0.5);
+    .how-we-work .swiper-slide {
+        width: 200px;
     }
-    100% {
-      box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+
+    .step b {
+        font-size: 1.2rem;
     }
+
 }
