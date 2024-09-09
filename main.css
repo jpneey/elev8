@@ -75,7 +75,7 @@ html, body {
     padding-top: 100%;
 }
 
-.swiper-slide-active,
+.how-we-work .swiper-slide-active,
 .btn-virgin,
 .bg-virgin {
     background: #C9D6FF;  /* fallback for old browsers */
@@ -178,7 +178,7 @@ html, body {
     }
 }
 
-.swiper-slide {
+.how-we-work .swiper-slide {
     font-size: 18px;
     display: flex;
     flex-wrap: wrap;
@@ -213,6 +213,10 @@ html, body {
     background-repeat: no-repeat;
     border: 1px solid #ccc;
     border-radius: 50%;
+}
+
+.usp-pagination {
+    transform: none !important;
 }
 
 

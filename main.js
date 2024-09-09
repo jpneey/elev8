@@ -60,8 +60,43 @@ $( document ).ready( function() {
 
 	}
 
+	const initSwipers = () => {
+		new Swiper(".how-we-work.swiper", {
+			slidesPerView: 'auto',
+			spaceBetween: 30,
+			grabCursor: true,
+			pagination: {
+				el: ".progress",
+				type: "progressbar",
+			},
+			
+			breakpoints: {
+				768: {
+					slidesPerView: 3,
+					spaceBetween: 40,
+				},
+			}
+		});
+		new Swiper(".usp-swiper", {
+			slidesPerView: '1',
+			spaceBetween: 30,
+			grabCursor: true,
+			pagination: {
+				el: ".usp-pagination",
+				dynamicBullets: true,
+			},
+			breakpoints: {
+				768: {
+					slidesPerView: 3,
+					spaceBetween: 40,
+				},
+			}
+		});
+	}
+
     classToggler();
     elementEntranceFade();
+	initSwipers();
 
     $(window).on('scroll', function() {
         // zoom scroll
@@ -80,20 +115,4 @@ $( document ).ready( function() {
 		perturbance: 0.1,
 	})
 
-	var swiper = new Swiper(".how-we-work.swiper", {
-		slidesPerView: 'auto',
-		spaceBetween: 30,
-		grabCursor: true,
-		pagination: {
-			el: ".progress",
-			type: "progressbar",
-		},
-		
-        breakpoints: {
-			768: {
-				slidesPerView: 3,
-				spaceBetween: 40,
-			},
-		}
-	});
 })
